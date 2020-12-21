@@ -18,7 +18,7 @@ const RecordData = () => {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(state),
+			body: JSON.stringify({ timestamp: new Date(Date.now()).toLocaleString(), ...state }),
 		})
 		const { status } = await response.json()
 		if (status === 'saved') {
@@ -26,7 +26,6 @@ const RecordData = () => {
 		}
 	}
 	const handleNotificationClose = () => openNotification(false)
-	console.log(notification)
 	return (
 		<Container maxWidth="lg" classes={{ root: m.container }}>
 			<Paper elevation={2} classes={{ root: m.paper }}>
