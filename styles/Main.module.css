@@ -3,3 +3,25 @@
 	flex-direction: column !important;
 	align-self: center;
 }
+.container {
+	display: flex !important;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.paper {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.caption {
+	margin-bottom: 32px !important;
+	text-align: right;
+}
+
+.button {
+	margin-top: 32px !important;
+}
