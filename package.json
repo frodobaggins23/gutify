@@ -1,22 +1,22 @@
 {
-  "name": "gutify",
-  "version": "0.1.0",
-  "private": true,
-  "browser": {
-    "child_process": false
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "google-spreadsheet": "^3.0.13",
-    "material-ui": "^0.20.2",
-    "next": "10.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "gutify",
+	"version": "0.1.0",
+	"private": true,
+	"browser": {
+		"child_process": false
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build && next export",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@material-ui/core": "^4.11.2",
+		"@material-ui/lab": "^4.0.0-alpha.57",
+		"google-spreadsheet": "^3.0.13",
+		"material-ui": "^0.20.2",
+		"next": "10.0.3",
+		"react": "17.0.1",
+		"react-dom": "17.0.1"
+	}
 }
