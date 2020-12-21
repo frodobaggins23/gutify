@@ -18,7 +18,7 @@ const RecordData = () => {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify({ timestamp: new Date(Date.now()).toLocaleString(), ...state }),
+			body: JSON.stringify(state),
 		})
 		const { status } = await response.json()
 		if (status === 'saved') {

@@ -10,7 +10,7 @@ export default async (req, res) => {
 		}
 		await doc.loadInfo()
 		const sheet = doc.sheetsByIndex[0]
-		await sheet.addRow(req.body)
+		await sheet.addRow({ timestamp: new Date(Date.now()).toLocaleString(), ...req.body })
 		res.statusCode = 200
 		res.json({ status: 'saved' })
 	} catch (error) {
