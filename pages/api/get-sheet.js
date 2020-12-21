@@ -10,7 +10,7 @@ export default async (req, res) => {
 		}
 		await doc.loadInfo()
 		const sheet = doc.sheetsByIndex[0]
-		await sheet.addRow({ name: 'Larry Page', email: 'larry@google.com' })
+		await sheet.addRow(req.body)
 		res.statusCode = 200
 		res.json({ status: 'saved' })
 	} catch (error) {

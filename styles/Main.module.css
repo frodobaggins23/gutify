@@ -1,0 +1,5 @@
+.formLabels {
+	display: flex;
+	flex-direction: column !important;
+	align-self: center;
+}
